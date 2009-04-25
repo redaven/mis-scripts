@@ -43,4 +43,56 @@ Ahora nos aparecera el siguiente menú
 Haga su Seleccion [0-5]: 
 }}}
 
-Seleccionamos la opcion *1*. Automaticamente instalara todo el software que necesitamos.
+Seleccionamos la opcion *1*. Automáticamente instalara todo el software que necesitamos.
+Una vez a acabado seleccionamos la Opción *2* es ltspadmin
+
+{{{
+
+LTSP Administration Utility
+
+  Install/Update LTSP Packages
+  Configure the installer options
+  Configure LTSP
+
+  Quit the administration program
+ ltspadmin
+
+seleccionamos la opción Configure the installer options para configurar un proxy (si navegamos detrás de uno), caso contrario salte este punto :
+
+LTSP Installer configuration
+
+
+Where to retrieve packages from?
+[http://ltsp.mirrors.tds.net/pub/ltsp/ltsp-4.2/]
+
+In which directory would you like to place the LTSP client tree?
+[/opt/ltsp]
+
+If you want to use an HTTP proxy, enter it here
+Use 'none' if you don't want a proxy
+Example:  http://proxy.yourdomain.com:31...
+
+[none]
+If you want to use an FTP proxy, enter it here
+(Use 'none' if you don't want a proxy)
+
+[none]  
+Correct? (y/n/c) y
+}}}
+
+Una vez todo listo saldrá esta pantalla.
+}}}
+     Component                Size (kb)   Status
+ [*] ltsp_core                    78996   Not installed
+ [*] ltsp_debug_tools              4284   Not installed
+ [*] ltsp_kernel                  13732   Not installed
+ [*] ltsp_libusb                     88   Not installed
+ [*] ltsp_localdev                    4   Not installed
+ [*] ltsp_perl                    28072   Not installed
+ [*] ltsp_rdesktop                  616   Not installed
+ [*] ltsp_scanners                 9556   Not installed
+ [*] ltsp_x_addtl_fonts           17368   Not installed
+ [*] ltsp_x_core                  97716   Not installed
+}}}
+
+Seleccionamos todos presionando la tecla *A*
