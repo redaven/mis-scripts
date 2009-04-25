@@ -11,11 +11,11 @@ De hecho es una automatización de la Configuración reflejada en la documentaci
 
 Básicamente lo que hace el script es lo siguiente:
 
- # Elimina el Repositorio DVD para que no nos pida el DVD
- # Añade los repositorios de Linkat
- # Descarga todos los paquetes que necesita para instalar ltsp (tftp , dhcp, kernel source, flash, mplayer, ltsputils, fuse....
- # Una vez Instalados los paquetes con ltspadmin nos configura el servidor dhcp de forma automatica simplemente preguntando el rango de ips a dar y la interficie de red
- # Configura el servidor NFS
- # Crea configuración LTSP con soporte de swapping por NBD ( Network Block Devices )
- # Configura las unidades extraibles automaticament, El lapiz usb funciona en caliente.
- # Configura el sonido en el sistema , flash y en mplayer 
+ * Elimina el Repositorio DVD para que no nos pida el DVD
+ * Añade los repositorios de Linkat
+ * Descarga todos los paquetes que necesita para instalar ltsp (tftp , dhcp, kernel source, flash, mplayer, ltsputils, fuse....
+ * Una vez Instalados los paquetes con ltspadmin nos configura el servidor dhcp de forma automatica simplemente preguntando el rango de ips a dar y la interficie de red
+ * Configura el servidor NFS
+ * Crea configuración LTSP con soporte de swapping por NBD ( Network Block Devices )
+ * Configura las unidades extraibles automaticament, El lapiz usb funciona en caliente.
+ * Configura el sonido en el sistema , flash y en mplayer 
