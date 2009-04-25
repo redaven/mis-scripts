@@ -118,3 +118,8 @@ Rango DHCP: *30 254*
 
 Le indico la interfaz eth1 por que es la que estan conectados los terminales.
 En el rango le digo que sea de la ip 30 a la 254.
+
+Esto nos dejara configurado el servidor dhcp y el servidor tftp.
+
+Ahora es el momento de configurar LTSP , para esto seleccionamos la opción *4*.
+Seleccionamos la interfaz de los ltsp ( En mi caso eth1, ver imagen)
