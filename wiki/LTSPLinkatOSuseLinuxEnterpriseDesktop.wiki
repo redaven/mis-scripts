@@ -32,7 +32,7 @@ _
 _
 
 Ahora nos aparecera el siguiente menú
-
+|
 1) Instalar Servicios 
 2) Configurar Servidor 
 3) Configurar DHCP 
@@ -41,3 +41,4 @@ Ahora nos aparecera el siguiente menú
 0) Salir
 
 Haga su Seleccion [0-5]: 
+|
