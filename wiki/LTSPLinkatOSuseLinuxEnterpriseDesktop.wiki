@@ -81,7 +81,7 @@ Correct? (y/n/c) y
 }}}
 
 Una vez todo listo saldrá esta pantalla.
-
+|
 }}}
      Component                Size (kb)   Status
  [*] ltsp_core                    78996   Not installed
@@ -96,7 +96,5 @@ Una vez todo listo saldrá esta pantalla.
  [*] ltsp_x_core                  97716   Not installed
 
 }}}
-
+|
 Seleccionamos todos presionando la tecla *A*
-
-aaa
