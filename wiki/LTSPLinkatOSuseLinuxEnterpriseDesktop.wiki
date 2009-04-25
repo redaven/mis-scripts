@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+
+= LTSP EN LINKAT 2 o SLE10 =
+
+Este script nos ofrece una forma rápida para instalar un servidor de terminales en sistemas Linkat 2 o Suse Linux Enterprise Desktop.
+
+De hecho es una automatización de la Configuración reflejada en la documentación oficial de terminales para Linkat con algunas modificaciones para tener mayor rendimiento.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
