@@ -102,11 +102,11 @@ Seleccionamos todos presionando la tecla *A*
 Una vez descargado todos los paquetes, vuelve al menú principal.
 
 Ahora seleccionamos *3* Para configurar el servidor DHCP nos preguntara la interfaz de red.
- |
+||
 Haga su Seleccion [0-5]: *3*
 Interface: *eth1*
 indica el ultimo octeto de cada rango
 ej: 100 200
  
 Rango DHCP: *30 254*
- |
+||
