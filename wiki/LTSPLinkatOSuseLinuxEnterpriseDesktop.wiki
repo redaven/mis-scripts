@@ -94,6 +94,7 @@ Una vez todo listo saldrá esta pantalla.
  [*] ltsp_scanners                 9556   Not installed
  [*] ltsp_x_addtl_fonts           17368   Not installed
  [*] ltsp_x_core                  97716   Not installed
+
 }}}
 
 Seleccionamos todos presionando la tecla *A*
