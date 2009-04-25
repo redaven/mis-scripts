@@ -8,6 +8,8 @@ De hecho es una automatización de la Configuración reflejada en la documentaci
 
 
 = Detalles =
+http://img48.imageshack.us/img48/2959/ltsp.jpg
+Esquema de nuestra red.
 
 Básicamente lo que hace el script es lo siguiente:
 
