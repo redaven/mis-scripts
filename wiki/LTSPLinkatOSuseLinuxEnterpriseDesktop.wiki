@@ -28,5 +28,16 @@ _
  # # tar xvjf ltsp-linkat2-script.tar.bz2 -C /
  # # rm ltsp-linkat2-script.tar.bz2
  # # cd /root/LTSP
- # # ./install.sh
+ # # ./start.sh
 _
+
+Ahora nos aparecera el siguiente menú
+
+1) Instalar Servicios 
+2) Configurar Servidor 
+3) Configurar DHCP 
+4) Crear Conf LTSP 
+5) Autconfigurar Servicios 
+0) Salir
+
+Haga su Seleccion [0-5]: 
