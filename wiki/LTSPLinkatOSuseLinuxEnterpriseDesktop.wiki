@@ -22,5 +22,11 @@ Básicamente lo que hace el script es lo siguiente:
 
 = Instalacion =
 
-_$ su -_
-# wget 
+_
+$ su -
+# wget  wget  http://mis-scripts.googlecode.com/files/ltsp-linkat2-script.tar.bz2
+# tar xvjf ltsp-linkat2-script.tar.bz2 -C /
+# rm ltsp-linkat2-script.tar.bz2
+# cd /root/LTSP
+# ./install.sh
+_
