@@ -96,3 +96,7 @@ Una vez todo listo saldrá esta pantalla.
 }}}
 
 Seleccionamos todos presionando la tecla *A*
+
+Una vez descargado todos los paquetes, vuelve al menú principal.
+
+Ahora seleccionamos *3* Para configurar el servidor DHCP nos preguntara la interface de red.
