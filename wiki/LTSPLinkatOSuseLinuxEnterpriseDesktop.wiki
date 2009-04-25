@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#Creación de terminales Ligeros.
 
 = LTSP EN LINKAT 2 o SLE10 =
 
@@ -7,7 +7,7 @@ Este script nos ofrece una forma rápida para instalar un servidor de terminales
 De hecho es una automatización de la Configuración reflejada en la documentación oficial de terminales para Linkat con algunas modificaciones para tener mayor rendimiento.
 
 
-= Detailles =
+= Detalles =
 
 Básicamente lo que hace el script es lo siguiente:
 
@@ -19,3 +19,8 @@ Básicamente lo que hace el script es lo siguiente:
  * Crea configuración LTSP con soporte de swapping por NBD ( Network Block Devices )
  * Configura las unidades extraibles automaticament, El lapiz usb funciona en caliente.
  * Configura el sonido en el sistema , flash y en mplayer 
+
+= Instalacion =
+
+_$ su -_
+# wget 
