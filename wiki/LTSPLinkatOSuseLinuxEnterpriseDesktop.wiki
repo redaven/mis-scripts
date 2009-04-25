@@ -115,3 +115,6 @@ ej: 100 200
  
 Rango DHCP: *30 254*
 ||
+
+Le indico la interfaz eth1 por que es la que estan conectados los terminales.
+En el rango le digo que sea de la ip 30 a la 254.
