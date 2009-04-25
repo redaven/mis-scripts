@@ -122,4 +122,27 @@ En el rango le digo que sea de la ip 30 a la 254.
 Esto nos dejara configurado el servidor dhcp y el servidor tftp.
 
 Ahora es el momento de configurar LTSP , para esto seleccionamos la opción *4*.
+
 Seleccionamos la interfaz de los ltsp ( En mi caso eth1, ver imagen)
+
+
+Ahora seleccionamos la Opción *5*
+
+{{{
+1) Audio 
+2) Dispositivos 
+3) NFS 
+0) Salir
+
+Haga su Seleccion [0-3]: 
+}}}
+
+Básicamente es seguir los instaladores después del audio , Dispositivos y luego NFS.
+
+Por ultimo salimos *0* y reiniciamos el servidor.
+
+Ya tenemos el servidor de terminales Listo.
+
+Según la conexión de red tardara mas o menos con una adsl domestica tarda 12Minutos.
+
+Saludos. 
