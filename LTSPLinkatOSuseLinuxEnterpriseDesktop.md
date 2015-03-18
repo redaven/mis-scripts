@@ -1,0 +1,146 @@
+#Creación de terminales Ligeros.
+
+# LTSP EN LINKAT 2 o SLE10 #
+
+Este script nos ofrece una forma rápida para instalar un servidor de terminales en sistemas Linkat 2 o Suse Linux Enterprise Desktop.
+
+De hecho es una automatización de la Configuración reflejada en la documentación oficial de terminales para Linkat con algunas modificaciones para tener mayor rendimiento.
+
+
+# Detalles #
+![http://img48.imageshack.us/img48/2959/ltsp.jpg](http://img48.imageshack.us/img48/2959/ltsp.jpg)
+Esquema de nuestra red.
+
+Básicamente lo que hace el script es lo siguiente:
+
+  * Elimina el Repositorio DVD para que no nos pida el DVD
+  * Añade los repositorios de Linkat
+  * Descarga todos los paquetes que necesita para instalar ltsp (tftp , dhcp, kernel source, flash, mplayer, ltsputils, fuse....
+  * Una vez Instalados los paquetes con ltspadmin nos configura el servidor dhcp de forma automatica simplemente preguntando el rango de ips a dar y la interficie de red
+  * Configura el servidor NFS
+  * Crea configuración LTSP con soporte de swapping por NBD ( Network Block Devices )
+  * Configura las unidades extraibles automaticament, El lapiz usb funciona en caliente.
+  * Configura el sonido en el sistema , flash y en mplayer
+
+# Instalacion #
+
+_1. $ su -
+  1. # wget  http://mis-scripts.googlecode.com/files/ltsp-linkat2-script.tar.bz2
+  1. # tar xvjf ltsp-linkat2-script.tar.bz2 -C /
+  1. # rm ltsp-linkat2-script.tar.bz2
+  1. # cd /root/LTSP
+  1. # ./start.sh_
+
+Ahora nos aparecera el siguiente menú
+```
+1) Instalar Servicios 
+2) Configurar Servidor 
+3) Configurar DHCP 
+4) Crear Conf LTSP 
+5) Autconfigurar Servicios 
+0) Salir
+
+Haga su Seleccion [0-5]: 
+```
+
+Seleccionamos la opcion **1**. Automáticamente instalara todo el software que necesitamos.
+Una vez a acabado seleccionamos la Opción **2** es ltspadmin
+
+```
+
+LTSP Administration Utility
+
+  Install/Update LTSP Packages
+  Configure the installer options
+  Configure LTSP
+
+  Quit the administration program
+ ltspadmin
+
+seleccionamos la opción Configure the installer options para configurar un proxy (si navegamos detrás de uno), caso contrario salte este punto :
+
+LTSP Installer configuration
+
+
+Where to retrieve packages from?
+[http://ltsp.mirrors.tds.net/pub/ltsp/ltsp-4.2/]
+
+In which directory would you like to place the LTSP client tree?
+[/opt/ltsp]
+
+If you want to use an HTTP proxy, enter it here
+Use 'none' if you don't want a proxy
+Example:  http://proxy.yourdomain.com:31...
+
+[none]
+If you want to use an FTP proxy, enter it here
+(Use 'none' if you don't want a proxy)
+
+[none]  
+Correct? (y/n/c) y
+```
+
+Una vez todo listo saldrá esta pantalla.
+```
+     Component                Size (kb)   Status
+ [*] ltsp_core                    78996   Not installed
+ [*] ltsp_debug_tools              4284   Not installed
+ [*] ltsp_kernel                  13732   Not installed
+ [*] ltsp_libusb                     88   Not installed
+ [*] ltsp_localdev                    4   Not installed
+ [*] ltsp_perl                    28072   Not installed
+ [*] ltsp_rdesktop                  616   Not installed
+ [*] ltsp_scanners                 9556   Not installed
+ [*] ltsp_x_addtl_fonts           17368   Not installed
+ [*] ltsp_x_core                  97716   Not installed
+```
+
+Seleccionamos todos presionando la tecla **A**
+
+Una vez descargado todos los paquetes, vuelve al menú principal.
+
+Ahora seleccionamos **3** Para configurar el servidor DHCP nos preguntara la interfaz de red.
+
+
+
+Haga su Seleccion [0-5]: **3**
+
+Interface: **eth1**
+
+indica el ultimo octeto de cada rango
+
+ej: 100 200
+
+Rango DHCP: **30 254**
+
+
+Le indico la interfaz eth1 por que es la que estan conectados los terminales.
+En el rango le digo que sea de la ip 30 a la 254.
+
+Esto nos dejara configurado el servidor dhcp y el servidor tftp.
+
+Ahora es el momento de configurar LTSP , para esto seleccionamos la opción **4**.
+
+Seleccionamos la interfaz de los ltsp ( En mi caso eth1, ver imagen)
+
+
+Ahora seleccionamos la Opción **5**
+
+```
+1) Audio 
+2) Dispositivos 
+3) NFS 
+0) Salir
+
+Haga su Seleccion [0-3]: 
+```
+
+Básicamente es seguir los instaladores después del audio , Dispositivos y luego NFS.
+
+Por ultimo salimos **0** y reiniciamos el servidor.
+
+Ya tenemos el servidor de terminales Listo.
+
+Según la conexión de red tardara mas o menos con una adsl domestica tarda 12Minutos.
+
+Saludos.
